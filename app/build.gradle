@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
+// binding view
 apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'com.apollographql.android'
@@ -41,8 +41,9 @@ dependencies {
 
     implementation 'com.apollographql.apollo:apollo-runtime:0.3.2'
     implementation "com.apollographql.apollo:apollo-android-support:0.3.2"
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    compile "org.jetbrains.anko:anko:0.10.4"
+
+    // library kotlin work on jdk
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
 
 }

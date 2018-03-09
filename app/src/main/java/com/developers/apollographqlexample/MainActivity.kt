@@ -1,5 +1,6 @@
 package com.developers.apollographqlexample
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -54,6 +55,14 @@ class MainActivity : AppCompatActivity() {
 
                     })
         })
+
+        bt_start_new_activity.setOnClickListener({
+            val intent = Intent(this,Main2Activity::class.java)
+            intent.putExtra("key", "abc")
+            startActivity(intent)
+        })
+
+
 
     }
 
